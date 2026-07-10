@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "floatcraft",
+  "version": "${version}",
+  "name": "Floatcraft",
+  "description": "Recreates Bedrock-style Stripe Lands (float-precision position glitches at +/-16,777,216) in Java Edition, plus world border removal and small End content additions.",
+  "authors": ["you"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["net.floatcraft.FloatcraftMod"],
+    "client": ["net.floatcraft.client.FloatcraftClient"]
+  },
+  "mixins": [
+    "floatcraft.mixins.json",
+    "floatcraft.worldgen.mixins.json",
+    {
+      "config": "floatcraft.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "~1.20.1",
+    "java": ">=17"
+  }
+}
