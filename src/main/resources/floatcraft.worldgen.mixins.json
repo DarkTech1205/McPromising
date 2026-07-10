@@ -1,0 +1,12 @@
+{
+  "required": false,
+  "package": "net.floatcraft.mixin.worldgen",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "NoiseSamplerMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
