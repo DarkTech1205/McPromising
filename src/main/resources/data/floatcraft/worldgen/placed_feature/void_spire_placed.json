@@ -1,8 +1,0 @@
-{
-  "feature": "floatcraft:void_spire",
-  "placement": [
-    { "type": "minecraft:rarity_filter", "chance": 12 },
-    { "type": "minecraft:in_square" },
-    { "type": "minecraft:heightmap", "heightmap": "WORLD_SURFACE_WG" }
-  ]
-}
